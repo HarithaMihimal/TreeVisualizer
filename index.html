@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dynamic Tree Visualization</title>
+<style>
+    /* Styles for the tree visualization */
+    .node circle {
+        fill: #fff;
+        stroke: steelblue;
+        stroke-width: 2px;
+    }
+
+    .node text {
+        font: 12px sans-serif;
+    }
+
+    .link {
+        fill: none;
+        stroke: #ccc;
+        stroke-width: 2px;
+    }
+
+    #controls {
+        margin-bottom: 20px;
+    }
+</style>
+</head>
+<body>
+
+<div id="controls">
+    <label for="node-input">Enter nodes as comma-separated values (e.g., A,B,C,D,E,F,G):</label>
+    <input type="text" id="node-input" placeholder="A,B,C,D,E,F,G">
+    <button id="generate-tree">Generate Tree</button>
+</div>
+
+<div id="tree-container"></div>
+
+<!-- D3.js library -->
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<!-- JavaScript code for dynamic tree generation -->
+<script src="script.js"></script>
+
+</body>
+</html>
